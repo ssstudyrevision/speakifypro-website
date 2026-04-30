@@ -317,6 +317,103 @@
             color: #FFD700;
         }
         
+        /* Affiliate Books Section */
+        .affiliate-books {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border-radius: 40px;
+            padding: 50px;
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .affiliate-books h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .affiliate-books h2 span {
+            color: #FFD700;
+        }
+        
+        .affiliate-books > p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .book-card {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            border-color: #FFD700;
+        }
+        
+        .book-emoji {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .book-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .book-desc {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+        
+        .affiliate-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700, #FF8C00);
+            color: #000;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.3s;
+            margin-top: 10px;
+        }
+        
+        .affiliate-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #FFE44D, #FFA500);
+        }
+        
+        .bundle-cta {
+            background: linear-gradient(135deg, #FF6D00, #E65100);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        .bundle-cta p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .bundle-cta strong {
+            font-size: 24px;
+            color: #FFD700;
+        }
+        
         .support-section {
             background: rgba(255,255,255,0.05);
             border-radius: 30px;
@@ -405,6 +502,8 @@
             .payment-btn { font-size: 18px; padding: 14px 30px; }
             .testimonials { padding: 30px; }
             .testimonials h2 { font-size: 28px; }
+            .affiliate-books h2 { font-size: 28px; }
+            .affiliate-books > p { font-size: 16px; }
         }
         
         .flash-sale {
@@ -466,7 +565,6 @@
             <h1>SpeakifyPro</h1>
             <div class="tagline">India's #1 English Learning App with Hindi Translations</div>
             
-            <!-- APP DOWNLOAD BUTTON -->
             <div class="btn-group">
                 <a href="https://apkpure.net/speakifypro/com.ram.speakifypro" class="download-btn">📱 Download App (Free)</a>
             </div>
@@ -496,7 +594,6 @@
                     <div style="font-size: 14px; margin: 5px 0;">Save ₹512 today!</div>
                 </div>
                 
-                <!-- RAZORPAY PAYMENT LINK -->
                 <a href="https://rzp.io/rzp/54JkXrRd" 
                    target="_blank"
                    class="payment-btn">
@@ -582,8 +679,47 @@
                 </div>
             </div>
         </div>
+
+        <!-- ========== AFFILIATE BOOKS SECTION (NEW) ========== -->
+        <div class="affiliate-books">
+            <h2>📚 Best <span>English Books</span> for Competitive Exams</h2>
+            <p>SSC • Banking • UPSC • Railway • Defence — Bilingual (English + Hindi)</p>
+            
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-emoji">📘</div>
+                    <div class="book-title">Blackbook of English Vocabulary 2026</div>
+                    <div class="book-desc">21,000+ words • Hindi meanings • SSC, Banking, UPSC</div>
+                    <a href="https://amzn.to/4ec72hZ" target="_blank" class="affiliate-btn">👉 Check Price on Amazon</a>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-emoji">📖</div>
+                    <div class="book-title">Wren & Martin English Grammar</div>
+                    <div class="book-desc">Grammar + Composition + Vocabulary • Basic to advanced</div>
+                    <a href="https://amzn.to/4cUNyfm" target="_blank" class="affiliate-btn">👉 Check Price on Amazon</a>
+                </div>
+                
+                <div class="book-card">
+                    <div class="book-emoji">📗</div>
+                    <div class="book-title">Oxford Advanced Learner's Dictionary</div>
+                    <div class="book-desc">11th Edition • 1,80,000+ words • Indian English coverage</div>
+                    <a href="https://amzn.to/4mUUfCG" target="_blank" class="affiliate-btn">👉 Check Price on Amazon</a>
+                </div>
+            </div>
+            
+            <div class="bundle-cta">
+                <p>🎯 <strong>Need all 3 books?</strong> 🎯</p>
+                <p>👇 Click any link above — Amazon will show you the best price & delivery options</p>
+                <p style="font-size: 14px; margin-top: 10px;">✅ 100% Secure Payment • ✅ Free Delivery Available • ✅ Cash on Delivery</p>
+            </div>
+            
+            <div style="margin-top: 20px; font-size: 12px; opacity: 0.7;">
+                🔹 Affiliate Disclosure: As an Amazon Associate, I earn from qualifying purchases. 🔹
+            </div>
+        </div>
+        <!-- ========== END AFFILIATE BOOKS SECTION ========== -->
         
-        <!-- CORRECTED GOOGLE FORM SECTION WITH YOUR EXACT EMBED CODE -->
         <div class="support-section">
             <h2>📞 Need Help or Have a Concern?</h2>
             <p style="margin-bottom: 25px; opacity: 0.9;">We are here for you! Fill out the form below and we will get back to you within 24 hours.</p>
